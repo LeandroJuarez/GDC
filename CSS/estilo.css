@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Montserrat, sans-serif;
+
+}
+
+header {
+    
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 1;
+  
+}
+
+.logo {
+
+    display: flex;
+    align-items: center;
+  
+}
+  
+.logo img {
+
+    height: 50px;
+    transition: transform 0.4s ease-in-out;
+  
+}
+
+.logo img:hover {
+
+  transform: scale(1.1);
+
+}
+
+nav a {
+
+    font-weight: 200;
+    padding-right: 40px;
+    color: #000000;
+    font-size: 12px;
+    text-transform: uppercase;
+  
+}
+
+nav a:hover {
+
+  color: #676b6c;
+  transition: 0.50s;
+
+}
+
+nav a:last-child {
+
+  background-color: #282828;
+  color: #EDE8E4;
+  padding: 10px 20px;
+  border-radius: 18px;
+  text-transform: uppercase;
+  font-weight: 200;  
+
+}
+
+nav a:last-child:hover {
+
+  background-color: #676767;
+  color: #EDE8E4;
+
+}
+
+/* Portada */
+
+.container-cover {
+
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: -0px;
+    background-image: url(../Imágenes/Fondo.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+  
+  .container-cover:before {
+
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(186,203,206,0.5) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+  
+  .container-info-cover {
+    
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  
+  }
+  
+  .container-info-cover h1 {
+
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+  
+  }
+  
+  .container-info-cover p {
+
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+
+  }
+
+/* Cuerpo */
+
+.course h1 {
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    color: #4f4f4f;
+    
+    }
+    
+    .course p {
+    
+      text-align: center;
+      font-weight: 200;
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 40%;
+    
+    }
+    
+    .row {
+    
+      margin-top: 20%;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin: 15px;
+    
+    }
+    
+    .course-col {
+    
+      flex-basis: 31%;
+    
+    }
+    
+    .course-col img {
+    
+      width: 150px;
+      height: 150px;
+      align-items: center;
+      transition: transform 0.2s ease-in-out;
+      margin-bottom: 10px;
+    
+    }
+    
+    .course-col h3 {
+    
+      font-weight: 600;
+      color: #777777;
+      text-transform: uppercase;
+      margin-top: 10%;
+      margin-bottom: 5%;
+    
+    }
+    
+    .course-col img:hover {
+    
+      transform: scale(1.1);
+    
+    }
+
+  /* Pie de página */
+
+  footer {
+
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--dark);
+    color: #000000;
+    background-color: #fff;
+    box-shadow: 0 4px 25px -12px black;
+  
+  }
+  
+  .copyright-container {
+  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+  
+  }
+  
+  .copyright {
+  
+    font-size: 12px;
+    opacity: 0.7;
+    font-weight: 400;
+    padding: 10px 0;
+  
+  }
+  
+  .footer-menus {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 40%;
+  
+  }
+  
+  .footer-container {
+  
+    height: fit-content;
+    width: 100%;
+    padding: 3rem 6rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  
+  }
+  
+  .footer-content-container {
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  
+  }
+  
+  footer .website-logo {
+  
+    margin-bottom: 1.2rem;
+    font-size: calc(1vw + 20px);
+  
+  }
+  
+   .website-logo h3 {
+  
+    color: #2A2A2A;
+  
+  }
+  
+  .footer-info, .menu-item-footer {
+  
+    margin: 0.2rem 0;
+    color: #000000;
+    text-decoration: none;
+    transition: 0.5s;
+  
+  }
+  
+  .menu-item-footer:hover {
+  
+    color: #4f4f4f;
+  
+  }
+  
+  .menu-title {
+  
+    font-size: var(--medium-text-font);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+  
+  }
+  
+  .social-container {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+  
+  }
+  
+  .social-link {
+  
+    height: 100%;
+    width: 30px;
+    background: #2A2A2A;
+    box-shadow: 0 4px 25px -12px black;
+    background-image: url(../Imágenes/.png);
+    background-size: 100%;
+    background-position: center;
+    margin-right: 1rem;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+  
+  }
+  
+  .social-link-2 {
+  
+    height: 100%;
+    width: 30px;
+    background: #2A2A2A;
+    box-shadow: 0 4px 25px -12px black;
+    background-image: url(../Imágenes/.png);
+    background-size: 100%;
+    background-position: center;
+    margin-right: 1rem;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+  
+  }
+
+  .social-link-3 {
+  
+    height: 100%;
+    width: 30px;
+    background: #2A2A2A;
+    box-shadow: 0 4px 25px -12px black;
+    background-image: url(../Imágenes/youtubelogo.jpg);
+    background-size: 100%;
+    background-position: center;
+    margin-right: 1rem;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+  
+  }
+
+  .social-link-4 {
+  
+    height: 100%;
+    width: 30px;
+    background: #2A2A2A;
+    box-shadow: 0 4px 25px -12px black;
+    background-image: url(../Imágenes/discordlogo.jpg);
+    background-size: 100%;
+    background-position: center;
+    margin-right: 1rem;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+  
+  }
