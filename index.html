@@ -14,6 +14,10 @@
 
 <link rel = "icon" href="IMÁGENES/hackatronlogo.png" type = "image/png">
 
+<script src="https://kit.fontawesome.com/a407e081f0.js" crossorigin="anonymous"> </script>
+
+<script src="JAVASCRIPT/script.js"> </script>
+
 <!-- Título -->
 
 <title> G.D.C </title>
@@ -24,7 +28,7 @@
 
 <body>
 
-<header>
+<header id="main-header" class="hidden">
 
 <a href="index.html" class="logo">
         
@@ -35,12 +39,13 @@
 <nav>
         
 <a href="index.html" class="nav-link"> Inicio </a>
-<a href="sobrenosotros.html" class="nav-link"> Sobre nosotros </a>
+<a href="prototipo.html" class="nav-link"> Prototipo </a>
 <a href="materiales.html" class="nav-link"> Materiales </a>
-<a href="contacto.html" class="nav-link btn"> Contacto </a>
             
 </nav>
 </header> 
+
+<div class="container-all" id="move-content"> 
 
 <!-- Portada -->
 
@@ -64,19 +69,19 @@
     
     <div class="course-col">
     <h3> Futuro </h3>
-    <img src="Imágenes/FuturoIcono.png" alt="ENCUESTAS">
+    <i class="fa-regular fa-clock"> </i>
     <p> La proyección a futuro de nuestro prototipo es agregarles una gran gama de elementos y funciones para mayor comidad al usuario.  </p>
     </div>
     
     <div class="course-col">
     <h3> Arduino </h3>
-    <img src="IMÁGENES/ArduinoIcono.png" alt="">
+    <i class="fa-regular fa-lightbulb"> </i>
     <p> Arduino es una plataforma de creación de electrónica de código abierto, la cual está basada en hardware y software libre, flexible y fácil de utilizar. </p>
     </div>
     
     <div class="course-col">
     <h3> A.c.t.e </h3>
-    <img src="IMÁGENES/ActeIcono.png" alt="">
+    <i class="fa-regular fa-note-sticky"> </i>
     <p> Este pretende contribuir al fortalecimiento de las trayectorias educativas de l@s estudiantes de todas las modalidades, mediante propuestas de enseñanza o aprendizajes. </p>
     </div>
     
@@ -92,7 +97,7 @@
     
 <div class="footer-content-container">
     
-    <h3 class="website-logo"> G.D.C </h3>
+<img class="website-logo" src="Imágenes/G.D.C-transparente.png">
             
 </div>
             
@@ -135,11 +140,13 @@
         
 <div class="copyright-container">
     
-<span class="copyright"> Copyright 2023, gdcompany.com. Todos los derechos reservados. </span>
+<span class="copyright">  gdcompany.com. </span>
         
 </div>
     
 </footer>
+
+</div>
     
 </body>
 
